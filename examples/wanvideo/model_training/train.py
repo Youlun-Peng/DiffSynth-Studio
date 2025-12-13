@@ -81,9 +81,9 @@ class WanTrainingModule(DiffusionTrainingModule):
             # Assume you are using this pipeline for inference,
             # please fill in the input parameters.
             "input_video": data["video"],
-            "height": data["video"][0].size[1],
-            "width": data["video"][0].size[0],
-            "num_frames": len(data["video"]),
+            "height": 480,
+            "width": 832,
+            "num_frames": 117,
             # Please do not modify the following parameters
             # unless you clearly know what this will cause.
             "cfg_scale": 1,
